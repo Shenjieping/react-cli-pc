@@ -1,0 +1,16 @@
+.App {
+    height: 44px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    a {
+        display: inline-block;
+        line-height: 44px;
+        color: #333;
+        font-size: 16px;
+        padding: 0 20px;
+        text-decoration: none;
+        &.active {
+            color: #f66;
+        }
+    }
+}

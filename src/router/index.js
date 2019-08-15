@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 import App from '../App.js';
 import Page1 from '../pages/page1';
@@ -14,6 +14,7 @@ export default class RouteMap extends Component {
                     <Switch>
                         <Route path='/page1' component={Page1} />
                         <Route path='/page2' component={Page2} />
+                        <Redirect to='/page1' />
                     </Switch>
                 </Route>
             </Router>
